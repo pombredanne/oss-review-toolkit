@@ -1,0 +1,12 @@
+// Apply core plugins.
+apply plugin: 'application'
+
+applicationName = 'downloader'
+mainClassName = 'com.here.ort.downloader.Main'
+
+dependencies {
+    compile project(':model')
+    compile project(':util')
+
+    compile "com.beust:jcommander:$jcommanderVersion"
+}
